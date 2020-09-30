@@ -6,15 +6,18 @@ body {
     grid-template-columns: 40px 40px auto 40px 40px;
     grid-template-rows: 40px 40px auto 40px 40px;
     overflow: hidden;
+    align-items: center;
     background: rgb(20,20,20);
 }
 
 svg {
-    grid-column-start: 3;
-    grid-row-start: 3;
-    width: 60%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    width: 80%;
     display: block;
-    margin: 0 auto;
+    margin:  auto;
 }
 
 h1{
@@ -40,6 +43,10 @@ p {
 }
 
 /*///////////////////////// ID's //////////////////////////*/
+
+#heySVG{
+    width: 1%;
+}
 
 #pTitle1{
     display: block;
@@ -69,15 +76,22 @@ p {
 }
 
 #dText1{
-    margin: 120px 0 auto 0;
+    margin: auto 0;
+    text-indent: 7em;
     grid-column-start: 1;
     grid-row-start: 2;
     transform: rotate(90deg);
 }
 
 #dText2{
-    margin: 0  0 -1200px 0 ;
+    margin: auto 0;
+    text-indent: 7em;
     grid-column-start: 5;
     grid-row-start: 4;
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
+}
+
+#backgrndSVG {
+    z-index: -3;
+    width:200%;
 }
