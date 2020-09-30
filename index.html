@@ -8,6 +8,12 @@
     <title>DOCX JULES</title>
 </head>
 <body>
+    <h2 id="pTitle1">Porfolio</h2><h2 id="pTitle2">Porfolio</h2>
+    <h1 id="nTitle1">DOCX</h1><h1 id="nTitle2">JULES</h1>
+    <p  id="dText1">Web development &nbsp;&nbsp; Graphic design &nbsp;&nbsp; Logo design.</p>
+    <p  id="dText2">Web development &nbsp;&nbsp; Graphic design &nbsp;&nbsp; Logo design.</p>
+
+
     <!-- <svg viewBox="0 0 678.46 1296.45" fill="white">
         <filter id="distortionFilterHelp">
             <feTurbulence type="turbulence" baseFrequency="0.01" numOctaves="2" result="turbulence"/>
@@ -80,27 +86,4 @@
 
 </body>
 <script src="main.js"></script>
-
-<script>
-    let timeline = anime.timeline({
-        duration: 4000,
-        easing: 'easeInOutQuart'
-    })
-
-    timeline.add({
-        targets: 'svg',
-        keyframes: [
-            {scale:0.3},
-            {scale: 0.5}
-        ],
-        duration: 2500
-    })
-
-    timeline.add({
-        targets: ['feTurbulence', 'feDisplacementMap'],
-        baseFrequency: 0, 
-        numOctaves: 0,
-        scale: 1,
-    }, '-=4000')
-</script>
 </html>

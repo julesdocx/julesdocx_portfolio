@@ -1,15 +1,83 @@
 body {
-    margin:0;
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5%;
+    height: 95vh;
     display: grid;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 40px 40px auto 40px 40px;
+    grid-template-rows: 40px 40px auto 40px 40px;
     overflow: hidden;
     background: rgb(20,20,20);
 }
 
 svg {
-    width:50%;
+    grid-column-start: 3;
+    grid-row-start: 3;
+    width: 60%;
     display: block;
     margin: 0 auto;
+}
+
+h1{
+    color: white;
+    margin: auto 0;
+    width: auto;
+    font-size: 22pt;
+}
+
+h2 {
+    margin: auto 0;
+    width: auto;
+    font-size: 22pt;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: none;
+}
+
+p {
+    color: white;
+    font-size: 12pt;
+    font-family: 'Arial Narrow';
+    white-space: nowrap;
+}
+
+/*///////////////////////// ID's //////////////////////////*/
+
+#pTitle1{
+    display: block;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#pTitle2{
+    grid-column-start: 4;
+    grid-row-start: 5;
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+#nTitle1{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    transform: rotate(90deg);
+
+}
+
+#nTitle2{
+    grid-column-start: 5;
+    grid-row-start: 4;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+#dText1{
+    margin: 120px 0 auto 0;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    transform: rotate(90deg);
+}
+
+#dText2{
+    margin: 0  0 -1200px 0 ;
+    grid-column-start: 5;
+    grid-row-start: 4;
+    transform: rotate(0deg);
 }
