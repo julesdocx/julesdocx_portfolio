@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Syne', sans-serif;
+}
+
+h1 {
+    font-family: 'Syne', medium;
+    color: black;
+    font-weight: 800;
+    font-size: 4em;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    top: 10vh;
+}
+
+span {
+    font-weight: 800;
+}
+
+.blurTitle {
+    mix-blend-mode: initial;
+    filter: blur(10px) ;
+}
+
+.content {
+    position: absolute;
+    top: 30vh;
+    width: 100%;
+}
+
+.card {
+    mix-blend-mode:;
+    background-color: black;
+    width: 200px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    border: white solid 1px;
+    box-shadow: black 0px 0px 50px;
+}
+
+
+
