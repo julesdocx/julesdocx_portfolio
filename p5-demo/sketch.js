@@ -28,7 +28,7 @@ function setup() {
 }
 
 function drawLine(v1, v2) {
-    stroke(0);
+    stroke(255);
     strokeWeight(0.5)
     line(v1.x, v1.y, v2.x, v2.y);
 //  point(v1.x, v1.y);
