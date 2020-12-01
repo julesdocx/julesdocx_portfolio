@@ -1,16 +1,24 @@
 <template>
   <div id="app">
-    <div class="content">
+     <P5Component/>
+    <div id="contentContainer" class="content">
       <router-view />
-    </div>
-    <div>
       <div id="nav" class="box">
         <ul>
           <li>
-            <router-link to="/">Home</router-link>
+            <router-link to="/" class="routerlink"><h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3></router-link>
           </li>
           <li>
-            <router-link to="/about">About</router-link>
+            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/" class="routerlink"><h3><span class="hoverEmoji emoji">🛠️</span><span class="navCapital">W</span>ork</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">📁</span><span class="navCapital">P</span>rototypes</h3></router-link>
+          </li>
+          <li>
+            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">💮</span><span class="navCapital">D</span>esign</h3></router-link>
           </li>
         </ul>
         <br>
@@ -19,18 +27,27 @@
   </div>
 </template>
 
-<style lang="scss">
-  body {
-    margin: 0px;
- //   background: white;
-//    background: #606060;
+<script>
+import P5Component from '@/components/P5Component.vue';
+export default {
+  components: {
+    P5Component
   }
-  #c {
+}
+</script>t
 
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap');
+
+  body {
+    overflow: hidden;
+    margin: 0px;
+  //   background: white;
+  //   background: #606060;
   }
 
   #app {
-    font-family: Arial, sans-serif;
+    font-family: Syne, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: black;
@@ -39,36 +56,52 @@
   }
 
   #nav {
-    display: grid;
     place-items: start end;
-    width: 10rem;
-    border: black 1px solid;
+    text-align: right;
     height: 98vh;
+    font-weight: 800;
 
     ul {
-
       list-style: none;
       padding: 0px;
-      margin: 10px;
+      margin: 45px 10px 10px 10px;
     }
     a, a:link, a:visited{
-      font-size: 1.5em;
       color:black;
       text-decoration: none;
     } 
   }
+  h3 {
+    //box-shadow:  0px 0px 15px 2px #000000;
+    background: rgb(200, 200, 200);
+    position: relative;
+  }
 
   .content {
-    margin: 10px;
-    flex: auto;
-    border: black 1px solid;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto minmax(200px, 15%);
     height: 98vh;
+    margin:0px 3%;
   }
 
   .box {
-    display: flex;
-    flex: auto;
     margin: 10px;
+  }
+
+  .hoverEmoji{
+    display: none;
+  }
+  .emoji {
+    font-size: 0.8em;
+  }
+  .routerlink:hover {
+    .hoverEmoji {
+      display: inline-block
+    }
+    .navCapital{
+      display: none;
+    }
   }
 
 </style>
