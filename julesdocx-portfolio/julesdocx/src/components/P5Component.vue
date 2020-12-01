@@ -45,16 +45,16 @@
             drawLine(p5, v1, v2) {
                 p5.stroke(230);
                 p5.strokeWeight(1)
-                p5.line(v1.x, v1.y, v2.x, v2.y);
-            //  p5.point(v1.x, v1.y);
-            //  P5.point(v2.x, v2.y);
+                // p5.line(v1.x, v1.y, v2.x, v2.y);
+             p5.point(v1.x, v1.y);
+             p5.point(v2.x, v2.y);
             },
             getState(a, b, c, d) {
                 return a * 8 + b * 4 + c * 2 + d * 1;
             },
             draw(p5) {
                 //p5.frameRate(0.001)
-                p5.background(200);
+                p5.background(255);
                 let xoff = 0;
                 for (let i = 0; i < this.cols; i++) {
                     xoff += this.increment;

@@ -9,16 +9,16 @@
             <router-link to="/" class="routerlink"><h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3></router-link>
           </li>
           <li>
-            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3></router-link>
+            <router-link to="/cv" class="routerlink"><h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3></router-link>
           </li>
           <li>
-            <router-link to="/" class="routerlink"><h3><span class="hoverEmoji emoji">🛠️</span><span class="navCapital">W</span>ork</h3></router-link>
+            <router-link to="/work" class="routerlink"><h3><span class="hoverEmoji emoji">🛠️</span><span class="navCapital">W</span>ork</h3></router-link>
           </li>
           <li>
-            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">📁</span><span class="navCapital">P</span>rototypes</h3></router-link>
+            <router-link to="/prototypes" class="routerlink"><h3><span class="hoverEmoji emoji">📁</span><span class="navCapital">P</span>rototypes</h3></router-link>
           </li>
           <li>
-            <router-link to="/about" class="routerlink"><h3><span class="hoverEmoji emoji">💮</span><span class="navCapital">D</span>esign</h3></router-link>
+            <router-link to="/graphic-design" class="routerlink"><h3><span class="hoverEmoji emoji">💮</span><span class="navCapital">D</span>esign</h3></router-link>
           </li>
         </ul>
         <br>
@@ -37,7 +37,7 @@ export default {
 </script>t
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
 
   body {
     overflow: hidden;
@@ -64,29 +64,42 @@ export default {
     ul {
       list-style: none;
       padding: 0px;
-      margin: 45px 10px 10px 10px;
+      margin: 30px 0px 0px 10px;
     }
     a, a:link, a:visited{
       color:black;
       text-decoration: none;
     } 
   }
+  .viewContainer {
+    margin-left: 0px;
+    margin-right: 5%;
+    text-align: justify;
+
+    p {
+      background: yellow;
+      padding:20px
+    }
+  }
   h3 {
     //box-shadow:  0px 0px 15px 2px #000000;
-    background: rgb(200, 200, 200);
+    background: white;
     position: relative;
+  }
+  h1{
+    background-color: white;
   }
 
   .content {
     display: grid;
     width: 100%;
-    grid-template-columns: auto minmax(200px, 15%);
+    grid-template-columns: auto minmax(140px, 15%);
     height: 98vh;
-    margin:0px 3%;
+    margin: 0px 5%;
   }
 
   .box {
-    margin: 10px;
+    margin: 0px;
   }
 
   .hoverEmoji{
@@ -101,6 +114,24 @@ export default {
     }
     .navCapital{
       display: none;
+    }
+  }
+
+  // *** MEDIA QUERIES *** //
+
+  @media (max-width: 800px) {
+    #nav {
+      display: none;
+    }
+    .content {
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto;
+      height: 98vh;
+      margin:3%;
+    }
+    .viewContainer {
+      margin: 0px;
     }
   }
 
