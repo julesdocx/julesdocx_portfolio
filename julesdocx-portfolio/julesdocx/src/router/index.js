@@ -2,9 +2,14 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Work from '../views/Work.vue'
-import Prototypes from '../views/Prototypes.vue'
+import DotsPix from '../views/DotsPix.vue'
+import NBAStats from '../views/NBAStats.vue'
+import FrontendCard from '../views/FrontendCard.vue'
 import Design from '../views/Design.vue'
+
+// const containsEncodedComponents = (x) => {
+//   return (decodeURI(x) !== decodeURIComponent(x));
+// }
 
 Vue.use(VueRouter)
 
@@ -15,19 +20,24 @@ const routes = [
     component: Home
   },
   {
-    path: '/cv',
+    path: '/🌱',
     name: 'My CV',
     component: About
   },
   {
-    path: '/work',
-    name: 'Work',
-    component: Work
+    path: '/✨',
+    name: 'Dots&Pix',
+    component: DotsPix
   },
   {
-    path: '/prototypes',
-    name: 'Prototypes',
-    component: Prototypes
+    path: '/🌌',
+    name: 'Frontend card',
+    component: FrontendCard
+  },
+  {
+    path: '/nbastats',
+    name: 'NBAStats',
+    component: NBAStats
   },
   {
     path: '/graphic-design',
@@ -37,6 +47,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

@@ -1,24 +1,21 @@
 <template>
-  <div class="about">
-    <HelloWorld msg="Welcome to The about page"/>
+  <div class="about viewContainer">
+    <h1>My CV</h1>
+   <p>
+     <a  target="_blank" href="https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/jules_docx_resume.pdf?alt=media&token=91d1b152-5c8c-4676-bcc0-1b1c2539fa1b" download>Download PDF</a>
+     </p>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+<script>  
 
 export default {
   name: 'About',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
 <style lang="scss" scoped>
-.about {
-  display: flex;
-  flex-direction: row;
-}
+
 </style>
+

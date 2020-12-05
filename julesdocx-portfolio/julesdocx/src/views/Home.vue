@@ -16,8 +16,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .home {
-    display: flex;
-    flex-direction: row;
-  }
 </style>

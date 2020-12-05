@@ -158,7 +158,7 @@
 
 <style lang="scss" scoped>
     #p5-canvas {
-        position: absolute;
+        position: fixed;
         z-index: -1;
     }
 </style>
