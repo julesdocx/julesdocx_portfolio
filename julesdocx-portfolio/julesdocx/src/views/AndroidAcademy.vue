@@ -4,16 +4,16 @@
      <p> 
     <ul>
       <li>
-        Java in Android studio
+        - Displaying a list of my artworks using <b>Java</b> in <b>Android studio</b>.
       </li>
       <li>
-        An Android application with a custom layout displaying a list of my artworks	
+        - Custom layout.	
       </li>
       <li>
-        The user could press on a high five button which would register in a Firebase Cloud Storage.
+        - Users can press a high five button, which is then registered in a <b>Firebase Cloud Storage</b>.
       </li>
       <li>
-        <a target="_blank" href="https://github.com/julesdocx/android_werkstuk_augustus_2020">URL</a>
+        - <a target="_blank" href="https://github.com/julesdocx/android_werkstuk_augustus_2020">Repository URL</a>.
       </li>
     </ul>
  </p>
@@ -32,10 +32,10 @@ export default {
   data() {
     return {
       images: [
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Screenshot%202020-12-05%20182825.png?alt=media&token=3a9a4931-847a-4d0f-b450-8689a23ff0d0', name: 'List'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Screenshot%202020-12-05%20182938.png?alt=media&token=16544bb8-3405-4594-af5c-3d76932dc83b', name: 'Detail view'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Screenshot%202020-12-05%20183117.png?alt=media&token=6420e998-b3cf-4bde-a327-e34f715af31d', name: 'High-five Prompt'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Screenshot%202020-12-05%20183153.png?alt=media&token=49544713-48af-42c3-9984-34c2475cc18c', name: 'Layered views'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Tekengebied%201.jpg?alt=media&token=b602a696-d25d-42a5-82ba-470ddb3ee754', name: 'List'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Tekengebied%203.jpg?alt=media&token=663ec5a6-43c4-4f0e-85e8-c89647a5df03', name: 'Detail view'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Tekengebied%204.jpg?alt=media&token=f91ab8b6-2e1a-494d-950e-2b0f3a5cba4f', name: 'High-five prompt'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-angular.appspot.com/o/Tekengebied%202.jpg?alt=media&token=1cd8078b-2cfd-419d-9a1b-ff300698e37e', name: 'Layered views'},
       ]
     }
   }

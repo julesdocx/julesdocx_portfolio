@@ -1,53 +1,58 @@
 <template>
   <div id="app">
     <P5Component />
-        <div id="contentContainer" class="content">
-        <div id="menuToggle" >
-          <input type="checkbox" />
-          <span class="toggleIcon"></span>
-          <span class="toggleIcon"></span>
-          <span class="toggleIcon"></span>
-          <ul id="menu" class="julesNav navBox">
-            <h4>Me</h4>
-            <li>
-              <router-link routerlink-active to="/" rou class="routerlink">
-                <h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/cv" class="routerlink">
-                <h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
-              </router-link>
-            </li>
-            <h4>Work</h4>
-            <li>
-              <router-link to="/dotsandpix" class="routerlink">
-                <h3><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/frontendcard" class="routerlink">
-                <h3><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/nbastats" class="routerlink">
-                <h3><span class="hoverEmoji emoji">🏀</span><span class="navCapital">N</span>BA Stats</h3>
-              </router-link>
-            </li>
-            <li>
-              <router-link to="/nbastats" class="routerlink">
-                <h3><span class="hoverEmoji emoji">🏀</span><span class="navCapital">S</span>howcase</h3>
-              </router-link>
-            </li>
-            <h4>Design</h4>
+    <div id="contentContainer" class="content">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span class="toggleIcon"></span>
+        <span class="toggleIcon"></span>
+        <span class="toggleIcon"></span>
+        <ul id="menu" class="julesNav navBox">
+          <h4>Me</h4>
+          <li>
+            <router-link to="/#" rou class="routerlink">
+              <h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/cv" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
+            </router-link>
+          </li>
+          <h4>Work</h4>
+          <li>
+            <router-link to="/dotsandpix" class="routerlink">
+              <h3><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/frontendcard" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/nbastats" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🏀</span><span class="navCapital">N</span>BA Stats</h3>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/academy" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🤖</span><span class="navCapital">A</span>ndroid</h3>
+            </router-link>
+          </li>
+          <li>
+            <router-link to="/academy" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🏥</span><span class="navCapital">A</span>cademy</h3>
+            </router-link>
+          </li>
+          <!-- <h4>Design</h4>
             <li>
               <router-link to="/💮" class="routerlink">
                 <h3><span class="hoverEmoji emoji">💮</span><span class="navCapital">D</span>esign</h3>
               </router-link>
-            </li>
-          </ul>
-        </div>
+            </li> -->
+        </ul>
+      </div>
       <router-view />
       <nav id="noToggleNav" class="box">
         <ul class="julesNav navBox">
@@ -85,15 +90,20 @@
               <h3><span class="hoverEmoji emoji">🤖</span><span class="navCapital">A</span>cademy</h3>
             </router-link>
           </li>
+          <li>
+            <router-link to="/ioshospitals" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🏥</span><span class="navCapital">I</span>OS Hospitals</h3>
+            </router-link>
+          </li>
         </ul>
-        <ul class="designNav navBox">
+        <!-- <ul class="designNav navBox">
           <h4>Design</h4>
           <li>
             <router-link to="/💮" class="routerlink">
               <h3><span class="hoverEmoji emoji">💮</span><span class="navCapital">D</span>esign</h3>
             </router-link>
           </li>
-        </ul>
+        </ul> -->
       </nav>
     </div>
   </div>
@@ -112,6 +122,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap');
   $yellow: #ffff00;
   $green: #00ff18;
+
+  li {
+    margin: 5px 0px;
+  }
 
   body {
     //overflow: hidden;
@@ -185,12 +199,14 @@
   h4 {
     margin-bottom: 0px;
   }
+
   h5 {
     margin: 0px 0px 0px 10px;
     font-size: 1.1em;
     z-index: 1;
     position: absolute;
   }
+
   h1 {
     font-size: 2.2em;
     font-weight: 800;
@@ -214,7 +230,7 @@
   }
 
   .emoji {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .routerlink:hover {
@@ -250,6 +266,7 @@
       background: white;
       border: 1px solid black;
     }
+
     .hoverEmoji {
       display: inline-block
     }
@@ -264,7 +281,7 @@
   #menuToggle {
     display: none;
     visibility: hidden;
-    height:10px;
+    height: 10px;
     position: relative;
     display: block;
     // top: 50px;
@@ -295,7 +312,7 @@
 
   #menuToggle .toggleIcon {
     display: none;
-    left: 3%  ;
+    left: 3%;
     width: 100%;
     height: 4px;
     margin-bottom: 5px;
@@ -348,7 +365,8 @@
     transform: translate(120%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 
-    h3, h4 {
+    h3,
+    h4 {
       padding-right: 20px;
     }
   }
@@ -360,21 +378,25 @@
   // *** MEDIA QUERIES *** //
 
   @media (max-width: 800px) {
-    .navBox{
-      margin:0px;
+    .navBox {
+      margin: 0px;
     }
 
-  h1 {
-    margin:0px;
-  }
+    h1 {
+      margin: 0px;
+    }
 
     #noToggleNav {
       display: none;
     }
-    #menuToggle{
-      visibility:initial;
+
+    #menuToggle {
+      visibility: initial;
       display: block;
-      .toggleIcon, input, ul {
+
+      .toggleIcon,
+      input,
+      ul {
         display: block;
       }
 

@@ -4,21 +4,18 @@
      <p> 
     <ul>
       <li>
-        Angular
+        - An <b>Angular</b> webapp for a mockup festival.
       </li>
       <li>
-        Fullstack
+        - Fullstack.
       </li>
       <li>
-        Mockup festival site
+        - Clear navigation throughout the whole webapp.
       </li>
       <li>
-        Clear navigation throughout the whole webapp
+        - Use of <b>Firebase Cloud Storage</b> dynamically interacting with the <b>Angular</b> components.
       </li>
-      <li>
-        Use of Firebase Cloud Storage applied in dynamic Angular components
-      </li>
-      <li><a target="_blank" href="https://werkstuk-jules-docx-angular.web.app/">URL</a></li>
+      <li>- <a target="_blank" href="https://werkstuk-jules-docx-angular.web.app/">URL</a>.</li>
     </ul>
  </p>
     <ImageSliderComponent :images="images"/>
@@ -37,10 +34,10 @@ export default {
   data() {
     return {
       images: [
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20181923.png?alt=media&token=0dd43ac2-fc9f-4f25-8170-815b2c5480f9', name: 'Frontpage'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20182119.png?alt=media&token=38962f02-fa2c-4064-8eff-66422dca72af', name: 'Speakers details'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20182231.png?alt=media&token=0cd1e7d1-2aba-4ae2-a61e-0f3f0ea24cd6', name: 'Line up'},
-        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-05%20170647.png?alt=media&token=a3c5ee1f-b052-4613-a7c7-3968511a216d', name: 'Sponsors page'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/dots%201.jpg?alt=media&token=1bb722c6-a18b-4e34-93a5-5be6efd0c5a1', name: 'Frontpage'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/dots%202.jpg?alt=media&token=a5ed8044-76f8-4d76-831d-1b419d28e930', name: 'Speakers details'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/dots%203.jpg?alt=media&token=7f55439d-1299-4dad-a592-6696c38bc034', name: 'Line up'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/dots%204.jpg?alt=media&token=7e0eccdd-c892-4768-899c-656782780632', name: 'Sponsors page'},
      ]
     }
   }

@@ -4,19 +4,22 @@
      <p> 
     <ul>
       <li>
-        MongoDB and Node Express
+        - Saving certain stats comparison charts to the database using <b>MongoDB</b> and <b>Node Express</b>.
       </li>
       <li>
-        The project used an NBA (basketball) stats api, at sportsdata.io/nba-api
+        - Uses an NBA (basketball) stats api, which can be found at sportsdata.io/nba-api.
       </li>
       <li>
-        The webapp allowed the user to save certain stats comparison charts to the database.
+        - Saves api endpoints instead of the data itself, which keeps it up to date.
       </li>
       <li>
-        The app saved api endpoints and not the data itself, which made the data always up to date.
+        - The user can choose specific players and statistics, which are represented by two adjacent bar graphs.
       </li>
       <li>
-        The user can choose players and a specific statistics, which will be shown on a graph, next to each other.
+        - The user can choose players and a specific statistics, which will be shown on a graph, next to each other.
+      </li>
+      <li>
+        - <a target="_blank" href="https://github.com/julesdocx/nba-stats-project.git">Repository URL</a>.
       </li>
     </ul>
  </p>
@@ -36,10 +39,7 @@ export default {
   data() {
     return {
       images: [
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg', name: 'rock'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg', name: 'mountain'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg', name: 'sky'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg', name: 'extra'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/stats%201.jpg?alt=media&token=d9b0b55c-94cd-4345-89b7-8c99b5158a1e', name: 'Without data'},
       ]
     }
   }

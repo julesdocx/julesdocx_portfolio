@@ -1,6 +1,9 @@
 <template>
   <div class="home">
-    <h1> "Hello &amp; Welcome"</h1>
+    <h1> "Coming Soon"</h1>
+    <p>
+      Artworks and Branding jobs.
+    </p>
   </div>
 </template>
 

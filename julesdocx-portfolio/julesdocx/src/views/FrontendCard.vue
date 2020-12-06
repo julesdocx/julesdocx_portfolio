@@ -1,21 +1,21 @@
 <template>
     <div class="work viewContainer">
-    <h1>Frontend Card</h1>
+    <h1>Presentation Card</h1>
      <p> 
     <ul>
       <li>
-        Vue.js and a configured p5.js library made compatible for Vue
+        - Presenting myself using <b>Vue.js</b> and a configured <b>p5.js</b> library, compatible with <b>Vue.js</b>.
       </li>
       <li>
-        Daniel Shiffman's The Nature of code online courses for p5.js
+        - Inspired by Daniel Shiffman's <i>The Nature of code</i> online courses for <b>p5.js</b>.
       </li>
       <li>
-        The webapp used a particle class and the outline of a font to create a custom effect of particles going through the font outline
+        - Use of vector-based particles moving through the outline of a font.
       </li>
       <li>
-        A set of parameters can be configured with sliders
+        - A set of parameters can be configured with sliders.
       </li>
-      <li><a target="_blank" href="https://werkstuk-jules-docx-vue.web.app/">URL</a></li>
+      <li>- <a target="_blank" href="https://werkstuk-jules-docx-vue.web.app/">URL</a>.</li>
     </ul>
  </p>
     <ImageSliderComponent :images="images"/>
