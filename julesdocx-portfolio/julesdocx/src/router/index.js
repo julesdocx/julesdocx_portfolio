@@ -6,6 +6,7 @@ import DotsPix from '../views/DotsPix.vue'
 import NBAStats from '../views/NBAStats.vue'
 import FrontendCard from '../views/FrontendCard.vue'
 import Design from '../views/Design.vue'
+import AndroidAcademy from '../views/AndroidAcademy.vue'
 
 // const containsEncodedComponents = (x) => {
 //   return (decodeURI(x) !== decodeURIComponent(x));
@@ -20,17 +21,17 @@ const routes = [
     component: Home
   },
   {
-    path: '/🌱',
+    path: '/cv',
     name: 'My CV',
     component: About
   },
   {
-    path: '/✨',
+    path: '/dotsandpix',
     name: 'Dots&Pix',
     component: DotsPix
   },
   {
-    path: '/🌌',
+    path: '/frontendcard',
     name: 'Frontend card',
     component: FrontendCard
   },
@@ -40,7 +41,12 @@ const routes = [
     component: NBAStats
   },
   {
-    path: '/graphic-design',
+    path: '/academy',
+    name: 'academy',
+    component: AndroidAcademy
+  },
+  {
+    path: '/graphicdesign',
     name: 'Design',
     component: Design
   },

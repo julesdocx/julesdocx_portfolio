@@ -75,8 +75,8 @@
                         //p5.strokeWeight(1)
                         let mouseDist = p5.dist(i * this.rez, j * this.rez, p5.mouseX, p5.mouseY)
                         if(mouseDist < 120) {
-                            p5.fill((this.field[i][j] + 0.9) * 255);
-                            p5.ellipse(i * this.rez, j * this.rez, 3-mouseDist/100, 3-mouseDist/100);
+                            p5.fill(50,(this.field[i][j] + 0.7) * 255,50);
+                            p5.ellipse(i * this.rez, j * this.rez, 4-mouseDist/50, 4-mouseDist/50);
                         } else if (((this.field[i][j] + 1.1) * 255) < 255 ) {
                             p5.ellipse(i * this.rez, j * this.rez, 3,  3);
                         }

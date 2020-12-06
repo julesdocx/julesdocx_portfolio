@@ -37,10 +37,10 @@ export default {
   data() {
     return {
       images: [
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg', name: 'rock'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg', name: 'mountain'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg', name: 'sky'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg', name: 'extra'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20181923.png?alt=media&token=0dd43ac2-fc9f-4f25-8170-815b2c5480f9', name: 'Frontpage'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20182119.png?alt=media&token=38962f02-fa2c-4064-8eff-66422dca72af', name: 'Speakers details'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-02%20182231.png?alt=media&token=0cd1e7d1-2aba-4ae2-a61e-0f3f0ea24cd6', name: 'Line up'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-05%20170647.png?alt=media&token=a3c5ee1f-b052-4613-a7c7-3968511a216d', name: 'Sponsors page'},
      ]
     }
   }

@@ -2,7 +2,7 @@
   <div id="app">
     <P5Component />
         <div id="contentContainer" class="content">
-        <div id="menuToggle">
+        <div id="menuToggle" >
           <input type="checkbox" />
           <span class="toggleIcon"></span>
           <span class="toggleIcon"></span>
@@ -10,23 +10,23 @@
           <ul id="menu" class="julesNav navBox">
             <h4>Me</h4>
             <li>
-              <router-link to="/" rou class="routerlink">
+              <router-link routerlink-active to="/" rou class="routerlink">
                 <h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
               </router-link>
             </li>
             <li>
-              <router-link to="/🌱" class="routerlink">
+              <router-link to="/cv" class="routerlink">
                 <h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
               </router-link>
             </li>
             <h4>Work</h4>
             <li>
-              <router-link to="/✨" class="routerlink">
+              <router-link to="/dotsandpix" class="routerlink">
                 <h3><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
               </router-link>
             </li>
             <li>
-              <router-link to="/🌌" class="routerlink">
+              <router-link to="/frontendcard" class="routerlink">
                 <h3><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
               </router-link>
             </li>
@@ -49,17 +49,16 @@
           </ul>
         </div>
       <router-view />
-      <nav id="nav" class="box">
-        <div id="noToggleNav">
+      <nav id="noToggleNav" class="box">
         <ul class="julesNav navBox">
           <h4>Me</h4>
           <li>
-            <router-link to="/" rou class="routerlink">
+            <router-link to="/#" rou class="routerlink">
               <h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
             </router-link>
           </li>
           <li>
-            <router-link to="/🌱" class="routerlink">
+            <router-link to="/cv" class="routerlink">
               <h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
             </router-link>
           </li>
@@ -67,12 +66,12 @@
         <ul class="workNav navBox">
           <h4>Work</h4>
           <li>
-            <router-link to="/✨" class="routerlink">
+            <router-link to="/dotsandpix" class="routerlink">
               <h3><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
             </router-link>
           </li>
           <li>
-            <router-link to="/🌌" class="routerlink">
+            <router-link to="/frontendcard" class="routerlink">
               <h3><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
             </router-link>
           </li>
@@ -82,8 +81,8 @@
             </router-link>
           </li>
           <li>
-            <router-link to="/nbastats" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🏀</span><span class="navCapital">S</span>howcase</h3>
+            <router-link to="/academy" class="routerlink">
+              <h3><span class="hoverEmoji emoji">🤖</span><span class="navCapital">A</span>cademy</h3>
             </router-link>
           </li>
         </ul>
@@ -95,7 +94,6 @@
             </router-link>
           </li>
         </ul>
-        </div>
       </nav>
     </div>
   </div>
@@ -111,13 +109,14 @@
 </script>t
 
 <style lang="scss">
-  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&display=swap');
   $yellow: #ffff00;
   $green: #00ff18;
 
   body {
     //overflow: hidden;
     margin: 0px;
+    overflow-x: hidden;
     //   background: white;
     //   background: #606060;
   }
@@ -127,6 +126,7 @@
   }
 
   #app {
+    overflow-x: hidden;
     font-family: Syne, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -135,10 +135,10 @@
     flex-direction: row;
   }
 
-  #nav {
+  #noToggleNav {
     position: fixed;
     top: 32px;
-    right: 5%;
+    right: 7%;
     place-items: start end;
     text-align: right;
     height: 98vh;
@@ -170,14 +170,16 @@
     border: 1px solid #000;
     // box-shadow: inset 0px 0px 7px 0px rgba(0,0,0,0.75);
     padding: 10px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 500;
+    font-family: Syne, Arial, sans-serif;
+    font-weight: 300;
     //border-radius: 10px;
   }
 
   h3 {
     //box-shadow:  0px 0px 15px 2px #000000;
     background: $green;
+    font-weight: 700;
+    user-select: none;
   }
 
   h4 {
@@ -198,9 +200,9 @@
     display: grid;
     width: 100%;
     grid-template-rows: auto;
-    grid-template-columns: auto auto minmax(200px, 15%);
+    grid-template-columns: 0px auto minmax(200px, 15%);
     height: 98vh;
-    margin: 0px 5%;
+    margin: 0px 7%;
   }
 
   .box {
@@ -243,15 +245,25 @@
     background: $green;
   }
 
-  .router-link-active a {
-    background: white;
-    border: 1px solid black;
+  .router-link-active {
+    h3 {
+      background: white;
+      border: 1px solid black;
+    }
+    .hoverEmoji {
+      display: inline-block
+    }
+
+    .navCapital {
+      display: none;
+    }
   }
 
   // *** HAMBURGER MENU *** //
 
   #menuToggle {
     display: none;
+    visibility: hidden;
     height:10px;
     position: relative;
     display: block;
@@ -260,10 +272,6 @@
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-
-    ul{
-      display: none;
-    }
   }
 
   #menuToggle a {
@@ -298,6 +306,7 @@
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
       opacity 0.55s ease;
+    transition-duration: 0.3s;
   }
 
   #menuToggle .toggleIcon:first-child {
@@ -311,8 +320,9 @@
   #menuToggle input:checked~.toggleIcon {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
     width: 33px;
+    background: #232323;
+    transition-duration: 0.3s;
   }
 
 
@@ -321,12 +331,12 @@
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-
   #menuToggle input:checked~.toggleIcon:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
   #menu {
+    margin-top: 15px;
     position: absolute;
     text-align: right;
     width: 100%;
@@ -337,6 +347,10 @@
     transform-origin: 0% 0%;
     transform: translate(120%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+    h3, h4 {
+      padding-right: 20px;
+    }
   }
 
   #menuToggle input:checked~ul {
@@ -358,6 +372,7 @@
       display: none;
     }
     #menuToggle{
+      visibility:initial;
       display: block;
       .toggleIcon, input, ul {
         display: block;

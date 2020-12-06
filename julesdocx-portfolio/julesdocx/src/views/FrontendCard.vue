@@ -33,10 +33,10 @@ export default {
   data() {
     return {
       images: [
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/rock.jpg', name: 'rock'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/grooves.jpg', name: 'mountain'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/arch.jpg', name: 'sky'},
-        {url:'https://s3-us-west-2.amazonaws.com/s.cdpn.io/5689/sunset.jpg', name: 'extra'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%202020-12-05%20173940.png?alt=media&token=f8790116-ee9f-402a-95bd-992d7794b96e', name: 'shot 1'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%20(12).png?alt=media&token=63f3d2a9-4888-4edb-821d-bdc0f7cd29b6', name: 'shot 2'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%20(11).png?alt=media&token=7307a42e-d12e-48c9-ad3b-e2f0eea521a0', name: 'shot 3'},
+        {url:'https://firebasestorage.googleapis.com/v0/b/werkstuk-jules-docx-vue.appspot.com/o/Screenshot%20(10).png?alt=media&token=755bbe1d-e7a5-4810-a09f-69b933566d08', name: 'shot 4'},
       ]
     }
   }
