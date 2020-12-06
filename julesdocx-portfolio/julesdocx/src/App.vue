@@ -3,46 +3,46 @@
     <P5Component />
     <div id="contentContainer" class="content">
       <div id="menuToggle">
-        <input type="checkbox" />
+        <input id="toggleCheck" type="checkbox" />
         <span class="toggleIcon"></span>
         <span class="toggleIcon"></span>
         <span class="toggleIcon"></span>
         <ul id="menu" class="julesNav navBox">
           <h4>Me</h4>
           <li>
-            <router-link to="/#" rou class="routerlink">
-              <h3><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
+            <router-link to="/#" class="routerlink">
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">😊</span><span class="navCapital">J</span>ules Docx</h3>
             </router-link>
           </li>
           <li>
             <router-link to="/cv" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">🌱</span><span class="navCapital">M</span>y CV</h3>
             </router-link>
           </li>
           <h4>Work</h4>
           <li>
             <router-link to="/dotsandpix" class="routerlink">
-              <h3><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">✨</span><span class="navCapital">D</span>ots &amp; Pix</h3>
             </router-link>
           </li>
           <li>
             <router-link to="/frontendcard" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">🌌</span><span class="navCapital">F</span>rontend Card</h3>
             </router-link>
           </li>
           <li>
             <router-link to="/nbastats" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🏀</span><span class="navCapital">N</span>BA Stats</h3>
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">🏀</span><span class="navCapital">N</span>BA Stats</h3>
             </router-link>
           </li>
           <li>
             <router-link to="/academy" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🤖</span><span class="navCapital">A</span>ndroid</h3>
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">🤖</span><span class="navCapital">A</span>ndroid</h3>
             </router-link>
           </li>
           <li>
-            <router-link to="/academy" class="routerlink">
-              <h3><span class="hoverEmoji emoji">🏥</span><span class="navCapital">A</span>cademy</h3>
+            <router-link to="/ioshospitals" class="routerlink">
+              <h3 v-on:click="onMobileRouterClick"><span class="hoverEmoji emoji">🏥</span><span class="navCapital">A</span>cademy</h3>
             </router-link>
           </li>
           <!-- <h4>Design</h4>
@@ -114,6 +114,11 @@
   export default {
     components: {
       P5Component
+    },
+    methods :{
+      onMobileRouterClick: () => {
+        document.getElementById("toggleCheck").checked = false;
+      }
     }
   }
 </script>t
