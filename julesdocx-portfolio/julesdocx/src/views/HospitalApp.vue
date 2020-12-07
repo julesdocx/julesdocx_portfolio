@@ -16,7 +16,7 @@
         - A second screen locates you and all nearby hospitals on a map.
       </li>
       <li>
-        - <a target="_blank" href="https://github.com/julesdocx/nba-stats-project.git">URL</a>.
+        - <a target="_blank" href="https://github.com/julesdocx/werkstukios">URL</a>.
       </li>
     </ul>
  </p>
